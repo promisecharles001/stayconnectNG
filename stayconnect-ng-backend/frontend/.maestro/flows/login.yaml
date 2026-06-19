@@ -1,0 +1,37 @@
+# E2E Test: User Login Flow
+appId: com.yourcompany.stayconnect
+---
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Complete onboarding if shown
+- runFlow:
+    when:
+      visible: "Get Started"
+    commands:
+      - tapOn: "Get Started"
+      - tapOn: "Next"
+      - tapOn: "Get Started"
+
+- tapOn: "Profile"
+
+- tapOn: "Sign In"
+
+- assertVisible: "Welcome Back"
+
+- tapOn:
+    id: "email-input"
+- inputText: "guest@example.com"
+
+- tapOn:
+    id: "password-input"
+- inputText: "Guest@123456"
+
+- tapOn: "Sign In"
+
+- waitForAnimationToEnd
+
+# Verify we are logged in and on home screen
+- assertVisible: "Explore"

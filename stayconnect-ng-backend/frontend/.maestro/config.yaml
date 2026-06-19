@@ -1,0 +1,6 @@
+# Maestro E2E Testing Configuration
+# Install Maestro: https://maestro.mobile.dev/getting-started/installing-maestro
+# Run tests: maestro test .maestro/flows
+
+appId: com.yourcompany.stayconnect
+---

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "20649742330",
+    "project_id": "stayconnect-ng",
+    "storage_bucket": "stayconnect-ng.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20649742330:android:9a751641a43d2f338f1e43",
+        "android_client_info": {
+          "package_name": "com.stayconnectng.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkalTor8Em9W8dbGHC99OdLnfH9vz11SM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

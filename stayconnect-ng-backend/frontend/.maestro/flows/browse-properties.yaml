@@ -1,0 +1,42 @@
+# E2E Test: Browse Properties Flow
+appId: com.yourcompany.stayconnect
+---
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Complete onboarding if shown
+- runFlow:
+    when:
+      visible: "Get Started"
+    commands:
+      - tapOn: "Get Started"
+      - tapOn: "Next"
+      - tapOn: "Get Started"
+
+- assertVisible: "Explore"
+
+# Search for properties
+- tapOn: "Search city, area or property..."
+- inputText: "Lagos"
+- pressKey: Enter
+
+- waitForAnimationToEnd
+
+- assertVisible: "Results for \"Lagos\""
+
+# Tap on a property card
+- tapOn:
+    id: "property-card"
+    index: 0
+
+- waitForAnimationToEnd
+
+# Verify property details screen
+- assertVisible: "Book Now"
+- assertVisible: "About this place"
+
+# Go back
+- tapOn:
+    id: "back-button"

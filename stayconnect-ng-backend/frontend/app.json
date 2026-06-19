@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "StayConnect",
+    "slug": "stayconnect-ng-frontend",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/logo.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#059669"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "scheme": "stayconnect",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stayconnectng.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "StayConnect needs access to your microphone for voice calls with hosts and guests.",
+        "UIBackgroundModes": [
+          "audio"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.stayconnectng.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.INTERNET",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MICROPHONE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#059669"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC6ZZztJuF0zvmFobROY5l0YjvpOmhNFKA"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "minSdkVersion": 24,
+            "newArchEnabled": true
+          },
+          "ios": {
+            "useFrameworks": "static",
+            "newArchEnabled": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3f5f9473-f1fb-462d-8fb0-c4a2396e6068"
+      }
+    },
+    "owner": "promisetheking",
+    "updates": {
+      "url": "https://u.expo.dev/3f5f9473-f1fb-462d-8fb0-c4a2396e6068",
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    },
+    "runtimeVersion": "1.0.0"
+  }
+}
