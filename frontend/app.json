@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "3f5f9473-f1fb-462d-8fb0-c4a2396e6068"
+      }
+    },
+    "android": {
+      "package": "stayconnect.NG"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Environment Variables (Sensitive!)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Expo
+.expo/
+.expo-shared/
+web-build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+eas-build-log*
+build-log.txt
